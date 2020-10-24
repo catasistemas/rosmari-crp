@@ -14,29 +14,51 @@ body{
 }
 .hero__container {
   display: grid;
-  grid-template: 100px 1fr 1fr 1fr 50px / 130px 1fr 1fr 300px;
-  grid-gap: 1px;
+  grid-template: 100px 1fr 1fr 1fr 50px / 100px 100px 1fr 1fr 400px;
+  /* grid-gap: 1px; */
   height: 100vh;
-  grid-template-areas: "logo title title nav"
-                        "aside main main main"
-                        "aside main main main"
-                        "aside main main main"
-                        "footer footer footer footer";
+  grid-template-areas: "logo logo title title nav"
+                        "aside main main main main"
+                        "aside main main main main"
+                        "aside main main main main"
+                        "footer footer footer footer footer";
 }
 .item {
-  border: blue solid 1px;
+  /* border: blue solid 1px; */
 }
 .logo {
   grid-area: logo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e5e0ff;
+  border-bottom: solid 3px gray;
+
 }
 .logo img {
   width: 100%;
+  padding: 5px;
 }
 .title {
   grid-area: title;
+  background: #e5e0ff;
+  color: #255d61;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 6rem;
+  text-shadow: 4px 3px 2px #9c8ee0;
+  border-bottom: solid 3px gray;
 }
 .nav {
   grid-area: nav;
+  background: #e5e0ff;
+  border-bottom: solid 3px gray;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
 }
 .nav__bar {
   list-style: none;
@@ -49,15 +71,24 @@ body{
   justify-items: center;
   align-items: center;
 }
+.aside a {
+  text-decoration: none;
+  color: #e7e7de;
+  letter-spacing: 1px;
+}
 .main {
   grid-area: main;
+  /* background-image: url("https://images.pexels.com/photos/258109/pexels-photo-258109.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
 }
 .footer {
   grid-area: footer;
 }
 .hero__aside-img {
   width: 100px;
-  border: blueviolet solid 1px;
+  /* border: blueviolet solid 1px; */
   text-align: center;
 }
 .hero__aside-img img {
