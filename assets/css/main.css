@@ -14,7 +14,7 @@ body{
 }
 .hero__container {
   display: grid;
-  grid-template: 100px 1fr 1fr 1fr 50px / 100px 100px 1fr 1fr 400px;
+  grid-template: 100px 1fr 1fr 1fr 50px / 120px 100px 1fr 1fr 400px;
   /* grid-gap: 1px; */
   height: 100vh;
   grid-template-areas: "logo logo title title nav"
@@ -32,7 +32,7 @@ body{
   align-items: center;
   justify-content: center;
   background: #e5e0ff;
-  border-bottom: solid 3px gray;
+  border-bottom: solid 3px #730fff;
 
 }
 .logo img {
@@ -42,38 +42,63 @@ body{
 .title {
   grid-area: title;
   background: #e5e0ff;
-  color: #255d61;
+  color: #730fff;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Times New Roman', Times, serif;
   font-size: 6rem;
-  text-shadow: 4px 3px 2px #9c8ee0;
-  border-bottom: solid 3px gray;
+  text-shadow: 4px 3px 2px #be8fff;
+  border-bottom: solid 3px #730fff;
 }
 .nav {
   grid-area: nav;
   background: #e5e0ff;
-  border-bottom: solid 3px gray;
+  border-bottom: solid 3px #730fff;
   font-family: 'Times New Roman', Times, serif;
   font-size: 3rem;
   display: flex;
-  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  /* border: solid red 1px; */
 }
 .nav__bar {
   list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* border: black 1px solid; */
+  width: 75%;
+}
+.nav__bar img {
+  width: 80%;
+}
+.nav__bar span {
+  letter-spacing: 1px;
+}
+.nav__bar a {
+  text-decoration: none;
+}
+.nav__bar li p {
+  display: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: black;
 }
 .aside {
   grid-area: aside;
-  background: #008891;
-  color: white;
+  background: #e5e0ff;
   display: grid;
   justify-items: center;
   align-items: center;
 }
 .aside a {
   text-decoration: none;
-  color: #e7e7de;
+  color: #730fff;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.8rem;
+  font-weight: bold;
   letter-spacing: 1px;
 }
 .main {
@@ -85,6 +110,7 @@ body{
 }
 .footer {
   grid-area: footer;
+  border: 1px solid red;
 }
 .hero__aside-img {
   width: 100px;
