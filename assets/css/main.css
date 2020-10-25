@@ -23,9 +23,6 @@ body{
                         "aside main main main main"
                         "footer footer footer footer footer";
 }
-.item {
-  /* border: blue solid 1px; */
-}
 .logo {
   grid-area: logo;
   display: flex;
