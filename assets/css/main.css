@@ -120,10 +120,13 @@ body{
 .hero__container--main {
   display: grid;
   grid-template: 1fr 1fr / repeat(3, 1fr);
-  background-image: url("/assets/image/port.jpg");
+  /* background-image: url("/assets/image/port.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
+  background-color: #8BC6EC;
+ background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+
 }
 .hero__main--portada {
   background-image: url("/assets/image/portada3.jpg");
@@ -168,7 +171,7 @@ body{
   /* align-items: center; */
 }
 .hero__main--description h2 {
-  color: #320a69;
+  color: #212121;
   text-align: center;
   font-size: 3rem;
   font-family: 'Times New Roman', Times, serif;
@@ -179,7 +182,7 @@ body{
   /* border: #730fff 1px solid; */
   text-align: justify;
   font-size: 2rem;
-  color: white;
+  color: #212121;
   font-family: 'Times New Roman', Times, serif;
 
 }
@@ -191,15 +194,49 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+
 }
 .hero__main--control li {
   font-family: 'Times New Roman', Times, serif;
-  color: white;
+  color: #212121;
   font-size: 2rem;
 }
 .hero__main--control h2 {
-  color: #320a69;
+  color: #212121;
   font-family: 'Times New Roman', Times, serif;
   font-size: 3rem;
   font-weight: bold;
+}
+.reviews {
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 2;
+  display: flex;
+  justify-content: space-evenly;
+}
+.students {
+  width: 25%;
+  height: 90%;
+  border-radius: 10px;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  display: flex;
+  flex-direction: column;
+}
+.students figure {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  margin-top: 10px;
+}
+.students img {
+  width: 40%;
+  border-radius: 100%;
+}
+.students p {
+  text-align: justify;
+  margin: 5px 10%;
+}
+.footer {
+  background: #e5e0ff;
+  margin: auto;
 }
